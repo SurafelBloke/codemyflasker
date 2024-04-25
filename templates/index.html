@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codemy flask</title>
+</head>
+<body>
+    <h1>Welcome {{first_name | capitalize}} </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Soluta delectus fugit, architecto maiores iste sequi? Quae, 
+        harum eligendi laboriosam quas officiis voluptatem cupiditate, 
+        alias neque maxime, delectus voluptate corporis sint.</p></br>
+    <p>{{ stuff | title}}</p>
+
+    {% for topping in favorite_pizza %}
+        {% if topping == 41 %}
+            {{ topping + 100 }}<br/>
+        {% else %}
+            {{ topping }}<br/>
+        {% endif %}
+        
+    {% endfor %} 
+</body>
+</html>
